@@ -1,4 +1,0 @@
-[build]
-  base = "egov-landing"
-  command = "npm run build"
-  publish = "egov-landing/dist"
