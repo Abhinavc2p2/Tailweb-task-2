@@ -1,0 +1,85 @@
+# -----------------------------
+# Node modules
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Build output
+# -----------------------------
+dist/
+dist-ssr/
+build/
+coverage/
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -----------------------------
+# Environment variables (IMPORTANT)
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Editor / IDE files
+# -----------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -----------------------------
+# Temporary files
+# -----------------------------
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# -----------------------------
+# Vite specific
+# -----------------------------
+.vite/
+
+# -----------------------------
+# Debug / runtime
+# -----------------------------
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# -----------------------------
+# Optional: lock files (choose ONE)
+# -----------------------------
+# Uncomment if needed:
+
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.local

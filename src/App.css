@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap');
+
+:root {
+  --blue: #00B5CA;
+  --blue-dark: #0e2d4e;
+  --blue-mid: #1577DD;
+  --blue-light: #e8f4fd;
+  --blue-5: #f0f8ff;
+  --orange: #FFA011;
+  --orange-2: #E8833E;
+  --text-dark: #1a1a2e;
+  --text-mid: #3d3d3d;
+  --text-light: #6b7280;
+  --border: #dde3ea;
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+  --radius: 8px;
+  --radius-lg: 15px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; outline: none; font-family: inherit; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === eGov Button Styles === */
+.btn-style-1 {
+  background: var(--blue);
+  color: #fff !important;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  display: inline-block;
+  border: 2px solid var(--blue);
+}
+.btn-style-1:hover { background: #009db0; border-color: #009db0; transform: translateY(-1px); }
+
+.btn-style-2 {
+  border: 2px solid var(--blue);
+  color: var(--blue) !important;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  display: inline-block;
+  background: transparent;
+}
+.btn-style-2:hover { background: var(--blue); color: #fff !important; }
+.btn-style-2.white { border-color: rgba(255,255,255,0.7); color: #fff !important; }
+.btn-style-2.white:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
+.btn-style-4 {
+  border: 1.5px solid var(--border);
+  color: var(--text-mid) !important;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  transition: all 0.2s;
+  display: inline-block;
+  background: transparent;
+}
+.btn-style-4:hover { border-color: var(--blue); color: var(--blue) !important; }
+
+/* === Typography === */
+.text-style-1 { font-family: 'DM Sans', sans-serif; }
+.text-style-2 { font-family: 'DM Serif Display', serif; color: var(--blue); }
+.text-style-3 { font-family: 'DM Serif Display', serif; }
+.fw-700 { font-weight: 700; }
+.fw-300 { font-weight: 300; }
+.text-white { color: #fff !important; }
+
+/* === Tag pill === */
+.tag-style-2 {
+  background: rgba(21,119,221,0.08);
+  color: var(--blue-mid);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(21,119,221,0.15);
+  white-space: nowrap;
+}
+
+/* === Animations === */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes shimmer {
+  0% { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+
+.fade-in { animation: fadeIn 0.4s ease; }
+.fade-in-up { animation: fadeInUp 0.5s ease both; }
